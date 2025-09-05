@@ -6,7 +6,9 @@ body {
   min-height: 100vh;
   padding: 100px;
   box-sizing: border-box;
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: repeat(6, auto);
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -29,4 +31,7 @@ body {
 .card:hover {
   transform: scale(1.02, 1.02);
   box-shadow: 1px 1px 5px #f4dc96aa, 1px 1px 15px #f4dc96aa;
+}
+.card:first-child {
+  grid-column-end: span 6;
 }
